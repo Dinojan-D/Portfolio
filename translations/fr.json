@@ -1,0 +1,25 @@
+{
+        "logo-text":"Dinojan",
+        "home-nav":"Accueil" ,
+        "about-nav":"Présentation" ,
+        "skills-nav":"Compétences",
+        "projects-nav":"Projets",
+        "contact-nav":"Contact",
+
+        "hero-title":"BIENVENUE <br>SUR MON SITE WEB</br>",
+        "hero-description":"Explorez mon univers : cybersécurité, création de jeux vidéo et programmation.",
+        "hero-quote":"L'art et rien que l'art, nous avons l'art pour ne point mourir de la vérité.",
+        "hero-quote-author":"- Friedrich Nietzsche",
+
+        "about-title":"À PROPOS DE MOI",
+        "about-description-text": "Je m'appelle Dinojan.<br><br>J'ai découvert ma passion pour l'informatique en créant des jeux vidéo pour le plaisir.<br>Très vite, j'ai voulu développer mes propres applications, mais j'ai rapidement compris<br>que la sécurité était un défi majeur.<br><br>C'est alors que je me suis plongé dans le monde de la cybersécurité, déterminé à protéger mes créations<br>et à apprendre comment sécuriser des systèmes complexes.<br><br>Aujourd'hui, je suis sur la voie pour devenir expert en cybersécurité, alliant créativité<br>et précision technique.<br><br>Je suis actuellement en terminale et je vise à poursuivre mes études dans le domaine des<br>télécommunications et réseaux, avec l'ambition de me spécialiser dans la cybersécurité au fur<br>et à mesure de mon parcours.",     
+        
+        "skills-title":"Mes Compétences",
+        "development-skills-title":"Compétences en Développement",
+        "programming-languages-title":"Langages de Programmation :",
+        "tools-title":"Outil(s) :",
+        "other-title":"Autre(s) :",
+        "cybersecurity-skills-title":"Compétences en Cybersécurité",
+        "miscellaneous-skills-title":"Compétences Diverses"
+
+}

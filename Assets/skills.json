@@ -1,0 +1,40 @@
+{   
+
+
+    "devSkills": {
+      "programming-languages-items": [
+        { "name": "Python", "img": "../Assets/images/python.256x254.png", "link": "https://www.python.org" },
+        { "name": "Lua", "img": "../Assets/images/lua.256x256.png", "link": "https://www.lua.org" },
+        { "name": "SQL", "img": "../Assets/images/sql-database-generic.190x256.png", "link": "https://www.mysql.com" },
+        { "name": "C", "img": "../Assets/images/c-original.223x256.png", "link": "https://icps.u-strasbg.fr/~bastoul/teaching/systeme/docs/Introduction_ANSI_C.pdf" },
+        { "name": "C#", "img": "../Assets/images/c-sharp-c.228x256.png", "link": "https://learn.microsoft.com/en-us/dotnet/csharp/" },
+        { "name": "JavaScript", "img": "../Assets/images/file-type-js-official.256x256.png", "link": "https://developer.mozilla.org/en-US/docs/Web/JavaScript" },
+        { "name": "TypeScript", "img": "../Assets/images/file-type-typescript-official.256x256.png", "link": "https://www.typescriptlang.org" },
+        { "name": "CSS", "img": "../Assets/images/file-type-css.226x256.png", "link": "https://developer.mozilla.org/en-US/docs/Web/CSS" },
+        { "name": "HTML", "img": "../Assets/images/file-type-html.226x256.png", "link": "https://developer.mozilla.org/en-US/docs/Web/HTML" }
+      ],
+      "development-tools-items": [
+        { "name": "Visual Studio Code", "img": "../Assets/images/file-type-vscode.256x254.png", "link": "https://code.visualstudio.com/docs" },
+        { "name": "Visual Studio", "img": "../Assets/images/visual-studio.256x255.png", "link": "https://visualstudio.microsoft.com/fr/vs/" }
+      ]
+    },
+    "cybersecuritySkills": {
+      "cybersecurity-tools-items": [
+        { "name": "NMAP", "img": "../Assets/images/NMAP.png", "link": "https://nmap.org" },
+        { "name": "Kali Linux", "img": "../Assets/images/distributor-logo-kali.256x256.png", "link": "https://www.kali.org/docs/" }
+      ],
+      "cybersecurity-other-items": [
+        { "name": "Hack The Box", "img": "../Assets/images/hack-the-box.256x256.png", "link": "https://www.hackthebox.com" }
+      ]
+    },
+    "miscellaneousSkills": {
+      "miscellaneous-other-items": [
+        { "name": "Blender", "img": "../Assets/images/blender.256x209.png", "link": "https://www.blender.org" },
+        { "name": "Excel", "img": "../Assets/images/file-type-excel.256x239.png", "link": "https://www.microsoft.com/en-us/microsoft-365/excel" },
+        { "name": "Windows", "img": "../Assets/images/windows.255x256.png", "link": "https://www.microsoft.com/windows" },
+        { "name": "Ubuntu", "img": "../Assets/images/ubuntu-inverse.256x256.png", "link": "https://ubuntu.com" },
+        { "name": "Roblox Studio", "img": "../Assets/images/RobloxStudio.png", "link": "https://create.roblox.com" }
+      ]
+    }
+  }
+  

@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+
+/* =======================
+    Variables globales
+=========================== */
+:root {
+    --body-background-color:rgb(46, 46, 46);
+    --main-font: "JetBrains Mono", serif;
+    --navbar-bg: #242323;
+}   
+
+/* =======================
+    Body
+=========================== */
+* {
+    margin: 0;
+    padding: 0;   
+}
+
+body {
+    user-select: none;
+    font-family: var(--main-font);
+    background-color: var(--body-background-color);
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+/* =======================
+    Cat Titles
+=========================== */
+.main-title{
+    display: inline-block;
+    margin-left: 20px;
+}
+
+.cat-title  {
+    position: relative;
+    color: white;
+    text-align: center;
+    font-size: 2em;
+    text-transform: uppercase;
+}
+
+.cat-title::after {
+    content: "";
+    position: absolute;
+    transform: translateX(-50%);
+    bottom:-4px;
+    left: 50%;
+    width: 90%;
+    height: 4px;
+    background-color:white;
+    border-radius: 2px;
+    margin-bottom: 0;
+    
+  }
+
+  @media (max-width: 500px) {
+    .main-title{
+        margin-left: 5px;
+    }
+  }

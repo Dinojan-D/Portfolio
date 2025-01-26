@@ -1,0 +1,24 @@
+{
+    "logo-text": "Dinojan",
+    "home-nav": "Home",
+    "about-nav": "About",
+    "skills-nav": "Skills",
+    "projects-nav": "Projects",
+    "contact-nav": "Contact",
+
+    "hero-title": "WELCOME <br>TO MY WEBSITE</br>",
+    "hero-description": "Explore my world: cybersecurity, game development, and programming.",
+    "hero-quote": "We have art in order not to die of the truth.",
+    "hero-quote-author": "- Friedrich Nietzsche",
+
+    "about-title": "ABOUT ME",
+    "about-description-text": "My name is Dinojan.<br><br>I discovered my passion for computer science by creating video games for fun.<br>Soon, I wanted to develop my own applications, but I quickly realized<br>that security was a major challenge.<br><br>That's when I delved into the world of cybersecurity, determined to protect my creations<br>and learn how to secure complex systems.<br><br>Today, I am on the path to becoming a cybersecurity expert, combining creativity<br>and technical precision.<br><br>I am currently in my senior year of high school and plan to pursue studies in telecommunications<br>and networks, with the goal of specializing in cybersecurity as I progress through my journey.",
+
+    "skills-title": "My Skills",
+    "development-skills-title": "Development Skills",
+    "programming-languages-title": "Programming Languages:",
+    "tools-title": "Tool(s):",
+    "other-title": "Other(s):",
+    "cybersecurity-skills-title": "Cybersecurity Skills",
+    "miscellaneous-skills-title": "Miscellaneous Skills"
+}
