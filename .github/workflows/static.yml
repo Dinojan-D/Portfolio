@@ -28,13 +28,7 @@ jobs:
       - name: Upload specific directories (HTML, CSS, JS, images, videos, JSON)
         uses: actions/upload-pages-artifact@v3
         with:
-          path: |
-            ./  # inclure tout le contenu du dépôt
-            scripts/
-            stylesheets/
-            Assets/
-            videos/
-            translations/
+          path:'.'
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
