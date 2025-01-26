@@ -33,11 +33,11 @@ jobs:
         uses: actions/checkout@v4
       - name: Setup Pages
         uses: actions/configure-pages@v5
-      - name: Upload artifact
+      - name: Upload all static content (HTML, CSS, JS, Images, Videos, JSON)
         uses: actions/upload-pages-artifact@v3
         with:
-          # Upload entire repository
-          path: '.'
+          # Upload the entire repository to ensure all files (images, JSON, videos, etc.) are included
+          path: '.'  # Assurez-vous que tout est dans la racine ou ajustez le chemin si nécessaire
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
