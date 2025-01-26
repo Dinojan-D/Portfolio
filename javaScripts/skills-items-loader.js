@@ -5,7 +5,7 @@ import {importJson} from "./jsonFilesHandler.js"
 
 
 async function loadSkills() {
-    const skillsInfos = await importJson('../Assets/Skills.json');
+    const skillsInfos = await importJson('../Assets/skills.json');
 
     for (const category in skillsInfos) {
         if (skillsInfos.hasOwnProperty(category)) {
