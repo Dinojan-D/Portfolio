@@ -25,12 +25,11 @@ jobs:
         uses: actions/checkout@v4
       - name: Setup Pages
         uses: actions/configure-pages@v5
-      - name: Upload specific directories (styleSheets, javaScritps, Assets, translations)
+      - name: Upload specific directories (HTML, CSS, JS, images, videos, JSON)
         uses: actions/upload-pages-artifact@v3
         with:
-          # Assurez-vous que les dossiers 'scripts', 'stylesheets', 'Assets', 'videos', et 'translations' sont inclus
           path: |
-            ./
+            ./  # inclure tout le contenu du dépôt
             scripts/
             stylesheets/
             Assets/
