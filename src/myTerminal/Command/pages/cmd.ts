@@ -23,7 +23,7 @@ const pages:{[key:string]:Command} ={
     "skills":{
         name:"skills",
         description:i18nCodePath + ".skills.desc",
-        callBack:()=>{return{state:true,message:"NoTr",commandName:"contact",displayType:"default",reactElement:React.createElement(Skills)}}
+        callBack:()=>{return{state:true,message:"NoTr",commandName:"skills",displayType:"default",reactElement:React.createElement(Skills)}}
     }
 
 }
