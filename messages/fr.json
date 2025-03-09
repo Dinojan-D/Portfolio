@@ -1,0 +1,59 @@
+{
+  "terminal": {
+    "error": {
+      "not-found": "Commande introuvable",
+      "try-again": "Veuillez réessayer"
+    },
+    "input-placeholder": "Tapez votre commande ici"
+  },
+  "cmds": {
+    "primary": {
+      "help": {
+        "desc": "Affiche la liste des commandes disponibles",
+        "content": {
+          "pages": "Pages",
+          "utilities": "Utilitaires"
+        }
+      },
+      "welcome": {
+        "desc": "Affiche un message de bienvenue personnalisé à l'utilisateur.",
+        "content": {
+          "message1": "Bienvenue dans mon monde numérique",
+          "message2": "Pour en savoir plus sur moi et mes projets, tapez :"
+        }
+      },
+      "clear": {
+        "desc": "Efface l'écran du terminal et réinitialise l'affichage."
+      }
+    },
+    "pages": {
+      "about": {
+        "desc": "Affiche des informations détaillées sur moi et mes intérêts.",
+        "content": {
+          "title": "À propos de moi",
+          "info1": "Je suis passionné par l'informatique, en particulier le développement de jeux vidéo et d'applications.",
+          "info2": "La cybersécurité est mon objectif professionnel principal. J'aime explorer les défis de la sécurité numérique.",
+          "info3": "Actuellement, je suis en terminale générale, spécialisé en technologie et programmation.",
+          "info4": "En dehors du code, je suis un grand fan de mangas et d'animes, qui nourrissent ma créativité."
+        }
+      },
+      "skills": {
+        "desc": "Affiche les compétences techniques et les outils que je maîtrise.",
+        "content": {
+          "title1": "Langages de programmation",
+          "title2": "Frameworks et technologies",
+          "title3": "Outils et environnements de développement",
+          "title4": "Autres compétences"
+        }
+      },
+      "contact": {
+        "desc": "Affiche les informations de contact pour me joindre.",
+        "content": {
+          "email": "Email: exemple@domain.com",
+          "linkedin": "LinkedIn: linkedin.com/in/exemple",
+          "github": "GitHub: github.com/exemple"
+        }
+      }
+    }
+  }
+}

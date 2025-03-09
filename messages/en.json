@@ -1,0 +1,59 @@
+{
+  "terminal": {
+    "error": {
+      "not-found": "Command not found",
+      "try-again": "Please try again"
+    },
+    "input-placeholder": "Type your command here"
+  },
+  "cmds": {
+    "primary": {
+      "help": {
+        "desc": "Displays a list of available commands",
+        "content": {
+          "pages": "Pages",
+          "utilities": "Utilities"
+        }
+      },
+      "welcome": {
+        "desc": "Displays a personalized welcome message to the user.",
+        "content": {
+          "message1": "Welcome to my digital world",
+          "message2": "To learn more about me and my projects, type:"
+        }
+      },
+      "clear": {
+        "desc": "Clears the terminal screen and resets the display."
+      }
+    },
+    "pages": {
+      "about": {
+        "desc": "Displays detailed information about me and my interests.",
+        "content": {
+          "title": "About Me",
+          "info1": "I am passionate about computer science, particularly game and application development.",
+          "info2": "Cybersecurity is my primary career goal, and I love exploring digital security challenges.",
+          "info3": "I am currently in the final year of high school, specializing in technology and programming.",
+          "info4": "Outside of coding, I'm a big fan of manga and anime, which inspire my creativity."
+        }
+      },
+      "skills": {
+        "desc": "Displays the technical skills and tools I am proficient in.",
+        "content": {
+          "title1": "Programming Languages",
+          "title2": "Frameworks and Technologies",
+          "title3": "Development Tools and Environments",
+          "title4": "Other Skills"
+        }
+      },
+      "contact": {
+        "desc": "Displays contact information to get in touch with me.",
+        "content": {
+          "email": "Email: example@domain.com",
+          "linkedin": "LinkedIn: linkedin.com/in/example",
+          "github": "GitHub: github.com/example"
+        }
+      }
+    }
+  }
+}

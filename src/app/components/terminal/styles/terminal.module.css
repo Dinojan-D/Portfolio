@@ -1,0 +1,18 @@
+/* Style uniquement pour OutputBox */
+.outputBox::-webkit-scrollbar {
+    width: 8px;
+}
+  
+.outputBox::-webkit-scrollbar-track {
+    background: #27004c00; /* Couleur du fond */
+}
+  
+.outputBox::-webkit-scrollbar-thumb {
+    background: #3a0140; /* Couleur du curseur */
+    border-radius: 50px;
+}
+  
+.outputBox::-webkit-scrollbar-thumb:hover {
+    background: #55555541;
+}
+  
