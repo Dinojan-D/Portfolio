@@ -8,8 +8,9 @@ import "./globals.css"
 export const metadata: Metadata = {
   title: "Dinojan | Portfolio",
   keywords: "cybersécurité, développement web, portfolio, terminal, console, Dinojan, hacking éthique, programmation, cybersecurity, web development, portfolio, terminal, console, ethical hacking, programming",
-  description: "Portfolio de Dinojan, passionné en cybersécurité et développement web. Découvrez mes projets et compétences.",
+  description: "Portfolio de Dinojan.cybersécurité et développement app/web/games.",  
 };
+
 
 export default async function LocaleLayout({
   children,
