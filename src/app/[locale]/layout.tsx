@@ -1,10 +1,9 @@
 import { Metadata } from 'next';
+import { Analytics } from '@vercel/analytics/next';
 import {NextIntlClientProvider} from 'next-intl';
 import {getMessages} from 'next-intl/server';
 import {notFound} from 'next/navigation';
 import {routing} from '@/i18n/routing';
-import { GoogleTagManagerScript } from '../components/GoogleA4/GoogleTagManagerScript';
-import { GoogleTagManagerNoScript } from '../components/GoogleA4/GoogleTagManagerNoScript';
 import "./globals.css"
 
 export const metadata: Metadata = {
@@ -32,12 +31,11 @@ export default async function LocaleLayout({
 
   return (
     <html lang={locale}>
-      <GoogleTagManagerScript/>
    
       <body className='h-screen w-screen' >
-        <GoogleTagManagerNoScript/>
         <NextIntlClientProvider  messages={messages}>
           {children}
+          <Analytics/>
         </NextIntlClientProvider>
       </body>
     </html>
