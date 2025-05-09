@@ -3,7 +3,8 @@ import {NextIntlClientProvider} from 'next-intl';
 import {getMessages} from 'next-intl/server';
 import {notFound} from 'next/navigation';
 import {routing} from '@/i18n/routing';
-import Script from 'next/script';
+import { GoogleTagManagerScript } from '../components/GoogleA4/GoogleTagManagerScript';
+import { GoogleTagManagerNoScript } from '../components/GoogleA4/GoogleTagManagerNoScript';
 import "./globals.css"
 
 export const metadata: Metadata = {
@@ -11,7 +12,6 @@ export const metadata: Metadata = {
   keywords: "cybersécurité, développement web, portfolio, terminal, console, Dinojan, hacking éthique, programmation, cybersecurity, web development, portfolio, terminal, console, ethical hacking, programming",
   description: "Portfolio de Dinojan.cybersécurité et développement app/web/games.",  
 };
-
 
 export default async function LocaleLayout({
   children,
@@ -32,20 +32,10 @@ export default async function LocaleLayout({
 
   return (
     <html lang={locale}>
-      
-      <Script
-        src={`https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX`}
-        strategy="afterInteractive"
-      />
-      <Script id="google-analytics" strategy="afterInteractive">
-        {`
-          window.dataLayer = window.dataLayer || [];
-          function gtag(){dataLayer.push(arguments);}
-          gtag('js', new Date());
-          gtag('config', 'G-XXXXXXXXXX');
-        `}
-      </Script>
+      <GoogleTagManagerScript/>
+   
       <body className='h-screen w-screen' >
+        <GoogleTagManagerNoScript/>
         <NextIntlClientProvider  messages={messages}>
           {children}
         </NextIntlClientProvider>
