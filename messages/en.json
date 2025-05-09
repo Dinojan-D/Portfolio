@@ -23,7 +23,8 @@
         }
       },
       "clear": {
-        "desc": "Clears the terminal screen and resets the display."
+        "desc": "Clears the terminal screen and resets the display.",
+        "success":"Terminal cleared !"
       }
     },
     "pages": {
@@ -49,9 +50,7 @@
       "contact": {
         "desc": "Displays contact information to get in touch with me.",
         "content": {
-          "email": "Email: example@domain.com",
-          "linkedin": "LinkedIn: linkedin.com/in/example",
-          "github": "GitHub: github.com/example"
+          "title1":"Contacts & Social media"
         }
       }
     }

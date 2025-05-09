@@ -1,12 +1,12 @@
 import React from 'react';
-import { getCommandsDesc } from '@/myTerminal/terminal';
+import  Terminal  from '@/terminal/terminal';
 import { useTranslations } from 'next-intl';
 const Help = () => {
     const t = useTranslations();
 
     const commandsInfo: {[key: string]: object} = {
-      "pages": getCommandsDesc(["contact", "about", "skills"]),
-      "utilities": getCommandsDesc(["help", "clear", "welcome"])
+      "pages": Terminal.getCommandsDesc(["contact", "about", "skills"]),
+      "utilities": Terminal.getCommandsDesc(["help", "clear", "welcome"])
     };
     
 

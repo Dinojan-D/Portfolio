@@ -1,17 +1,18 @@
 'use client';
 import React, { useState } from 'react';
-import { tryCommand, type CommandResult } from '@/myTerminal/terminal';
 import { useTranslations } from 'next-intl';
+import Terminal from '@/terminal/terminal'; 
+import { CommandResult } from '@/terminal/types';
+
 type InputBoxProps = {
   onCommandSubmit: (commandResult: CommandResult) => void;
 };
 
 const InputBox = ({ onCommandSubmit }: InputBoxProps) => {
-  const t =useTranslations();
-
+  const t = useTranslations();
   const [inputValue, setInputValue] = useState('');
   const [history, setHistory] = useState<string[]>([]);
-  const [currentIndex, setCurrentIndex] = useState<number>(-1);
+   const [currentIndex, setCurrentIndex] = useState<number>(-1);
 
   const handleInputChange = (event: React.ChangeEvent<HTMLInputElement>) => {
     setInputValue(event.target.value);
@@ -20,19 +21,20 @@ const InputBox = ({ onCommandSubmit }: InputBoxProps) => {
   const handleKeyDown = (event: React.KeyboardEvent<HTMLInputElement>) => {
     if (event.key === 'Enter') {
       if (inputValue.trim() === '') return;
-
-      const commandResult: CommandResult = tryCommand(inputValue.trim());
+      const lowInput = inputValue.toLowerCase()
+      
+      const commandResult = Terminal.executeCommand(lowInput);
       
      
+    
+      //Send to out Put
       onCommandSubmit(commandResult);
 
-      
-      setHistory((prev) => [...prev, inputValue]);
+      //history + reset
+      setHistory((prev) => [...prev, lowInput]);
       setCurrentIndex(-1); 
       setInputValue(''); 
     }
-
-    
     if (event.key === 'ArrowUp') {
       if (currentIndex < history.length - 1) {
         const newIndex = currentIndex + 1;
@@ -53,13 +55,12 @@ const InputBox = ({ onCommandSubmit }: InputBoxProps) => {
 
   return (
     <div className="flex items-center justify-center w-full bg-[#2b023a] mt-1">
-     
       <div className='mx-5 bg-white h-[50%] w-[3px] rounded-full text-[#ffffff00]'>f</div>
       <input
         type="text"
         value={inputValue}
         onChange={handleInputChange}
-        onKeyDown={handleKeyDown} 
+        onKeyDown={handleKeyDown}
         placeholder={">>"+t("terminal.input-placeholder")}
         className="w-full border-0 font-bold text-xl text-white py-4 focus:outline-none focus:shadow-outline appearance-none"
       />

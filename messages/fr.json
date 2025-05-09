@@ -23,7 +23,9 @@
         }
       },
       "clear": {
-        "desc": "Efface l'écran du terminal et réinitialise l'affichage."
+        "desc": "Efface l'écran du terminal et réinitialise l'affichage.",
+        "success":"Terminal nettoyé !"
+
       }
     },
     "pages": {
@@ -49,9 +51,7 @@
       "contact": {
         "desc": "Affiche les informations de contact pour me joindre.",
         "content": {
-          "email": "Email: exemple@domain.com",
-          "linkedin": "LinkedIn: linkedin.com/in/exemple",
-          "github": "GitHub: github.com/exemple"
+          "title1":"Contacts & Reseau sociaux"
         }
       }
     }

@@ -1,35 +1,27 @@
 'use client';
-import React, { useState } from 'react';
+import React, { useState,useEffect } from 'react';
 import InputBox from './InputBox';
 import OutputBox from './OutputBox';
-import { type CommandResult } from '@/myTerminal/terminal';
-import Welcome from '../commands/primary/Welcome';
+import { type CommandResult } from '@/terminal/types';
+import Terminal from '@/terminal/terminal';
+import { loadCommand } from '@/terminal/register';
 
-
-
-const Terminal = () => {
+const TerminalComp = () => {
   const [commandResults, setCommandResults] = useState<CommandResult[]>([
-    {
-      "state": true,
-      "message": "NoTr",
-      "commandName": "welcome",
-      "displayType": "default",
-      "reactElement":React.createElement(Welcome)
-      }
   ]);
 
-  const instructions: { [key: string]: (commandRes: CommandResult) => void } = {
-    "clear": (commandRes: CommandResult) => {
-      commandRes = commandRes
-      setCommandResults([]); 
-    }
-  };
+  
+
+  useEffect(()=>{
+    loadCommand()
+    setCommandResults([Terminal.executeCommand("welcome")
+  ])},[])
 
   const handleCommandSubmit = (commandRes: CommandResult) => {
     console.log(commandRes)
-    if (commandRes.instruction){
-        instructions[commandRes.instruction](commandRes);
-        return
+    const instruction = commandRes?.instruction
+    if (instruction && typeof instruction === "function" ){
+      setCommandResults(instruction(commandResults))
     }
 
     setCommandResults((prevState) => [...prevState, commandRes]);
@@ -43,4 +35,4 @@ const Terminal = () => {
   );
 };
 
-export default Terminal;
+export default TerminalComp;

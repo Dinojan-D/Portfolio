@@ -1,8 +1,8 @@
 import TopBar from '../components/top-bar/TopBar';
-import Terminal from '../components/terminal/Terminal';
+import TerminalComp from '../components/terminal/Terminal';
 
 export default function HomePage() {
-
+ 
   return (
     <div className='h-[100%] w-[100%] flex flex-col bg-gradient-to-tl from-[#07001d] via-[#0d062b] to-[#290848]'>
       
@@ -11,7 +11,7 @@ export default function HomePage() {
       </div>
      
       <div className="h-full">
-        <Terminal />  
+        <TerminalComp />  
       </div>
     </div>
   );

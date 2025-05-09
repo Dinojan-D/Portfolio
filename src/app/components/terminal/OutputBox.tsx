@@ -1,7 +1,7 @@
 'use client';
 import { useTranslations } from 'next-intl';
 import React, { useEffect, useRef } from 'react';
-import { type CommandResult } from '@/myTerminal/terminal';
+import { type CommandResult } from '@/terminal/types';
 import styles from './styles/terminal.module.css';
 
 import CommandLine from './CommandLine';
@@ -29,21 +29,10 @@ const OutputBox = ({ commandResults }: OutputBoxProps) => {
     >
       {commandResults.map((result, index) => (
         <div key={index} className="mb-4 flex flex-col space-x-2 items-start">
-          <CommandLine state={result.state} commandName={result.commandName} />
+          <CommandLine state={result.success} commandName={result.cmdName} />
           <div className="ml-7">
-            {/* Vérification de la validité du message */}
-            {result.message ? (
-              result.message !== 'void' && !result.message.includes('NoTr') ? (
-                // Tenter de traduire le message si possible
-                <div>{t(result.message) || result.message}</div>
-              ) : (
-                // Si le message contient "NoTr", l'afficher séparément
-                <div>{result.message.split('NoTr').join('')}</div>
-              )
-            ) : (
-              // Message vide ou indéfini, afficher un message par défaut
-              <div>{t('error.invalidMessage') || 'Message invalide'}</div>
-            )}
+            {result?.message && <div>{t(result.message) || result.message}</div>}
+
             {result?.reactElement}
           </div>
         </div>

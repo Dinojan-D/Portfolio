@@ -1,5 +1,5 @@
 import React from 'react';
-import { SiLua, SiC, SiMysql, SiPython, SiHtml5, SiCss3, SiTypescript, SiJavascript, SiNextdotjs, SiKalilinux, SiUbuntu, SiRobloxstudio, SiBlender } from 'react-icons/si';
+import { SiLua, SiC, SiMysql, SiPython, SiHtml5, SiCss3,SiGithub, SiTypescript, SiJavascript, SiNextdotjs, SiKalilinux, SiUbuntu, SiRobloxstudio, SiBlender } from 'react-icons/si';
 import { TbBrandCSharp } from "react-icons/tb";
 import { FaWindows } from "react-icons/fa";
 import { BiLogoVisualStudio } from "react-icons/bi";
@@ -26,6 +26,7 @@ const skillsData: { [key: string]: { icon: React.JSX.Element; link: string; name
   "Tools": [
     { icon: <SiKalilinux />, link: "https://www.kali.org/", name: "Kali Linux" },
     { icon: <SiUbuntu />, link: "https://ubuntu.com/", name: "Ubuntu" },
+    {icon: <SiGithub/> , link:"https://github.com/Dinojan-D",name:"GitHub"},
     { icon: <FaWindows />, link: "https://www.microsoft.com/en-us/windows", name: "Windows" },
     { icon: <BiLogoVisualStudio />, link: "https://visualstudio.microsoft.com/", name: "Visual Studio" }
   ],
