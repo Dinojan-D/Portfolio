@@ -3,7 +3,7 @@ import {NextIntlClientProvider} from 'next-intl';
 import {getMessages} from 'next-intl/server';
 import {notFound} from 'next/navigation';
 import {routing} from '@/i18n/routing';
-
+import Script from 'next/script';
 import "./globals.css"
 
 export const metadata: Metadata = {
@@ -32,6 +32,19 @@ export default async function LocaleLayout({
 
   return (
     <html lang={locale}>
+      
+      <Script
+        src={`https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX`}
+        strategy="afterInteractive"
+      />
+      <Script id="google-analytics" strategy="afterInteractive">
+        {`
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-XXXXXXXXXX');
+        `}
+      </Script>
       <body className='h-screen w-screen' >
         <NextIntlClientProvider  messages={messages}>
           {children}
